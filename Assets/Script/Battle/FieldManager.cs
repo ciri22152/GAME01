@@ -7,21 +7,21 @@ using UnityEngine;
 /// </summary>
 public class FieldManager : MonoBehaviour
 {
-	// オブジェクト・コンポーネント参照
-	private BattleManager battleManager; // 戦闘画面マネージャ
+    // オブジェクト・コンポーネント参照
+    private BattleManager battleManager; // 戦闘画面マネージャ
 
-	// 初期化処理
-	public void Init(BattleManager _battleManager)
-	{
-		// 参照取得
-		battleManager = _battleManager;
+    // 初期化処理
+    public void Init(BattleManager _battleManager)
+    {
+        // 参照取得
+        battleManager = _battleManager;
 
-		Debug.Log("FieldManager.cs : 初期化完了");
-	}
+        Debug.Log("FieldManager.cs : 初期化完了");
+    }
 
-	// Update
-	void Update()
-	{
+    // Update
+    void Update()
+    {
 
-	}
+    }
 }
