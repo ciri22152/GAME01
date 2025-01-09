@@ -8,8 +8,7 @@ public class BattleManager : MonoBehaviour
     {
         if (fieldManager != null)
         {
-            fieldManager.Init(this); // FieldManagerの初期化
-            fieldManager.InitHands(); // Handsキャンバスを初期化
+            fieldManager.InitHands(this); // FieldManagerの初期化とHandsキャンバスの初期化
         }
         else
         {

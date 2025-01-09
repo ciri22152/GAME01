@@ -1,55 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-/// <summary>
-/// カード処理クラス
-/// </summary>
-public class Card : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class Card : MonoBehaviour, IPointerDownHandler
 {
-    private bool isDragging = false; // カードがドラッグ中かどうか
-    private Camera mainCamera; // メインカメラの参照
+    private bool isPlayed = false; // カードがすでにプレイされたかどうか
+    public Transform cardZone; // カードを配置するCardZone
 
-    // Start(シーン開始時orインスタンス作成時に1回実行)
-    void Start()
-    {
-        mainCamera = Camera.main; // メインカメラの取得
-        Debug.Log("シーン開始");
-    }
-
-    // Update(毎フレーム1回ずつ実行)
-    void Update()
-    {
-        if (isDragging)
-        {
-            // マウス位置を取得してカードを移動
-            Vector3 mousePosition = Input.mousePosition; // マウスのスクリーン座標
-            mousePosition.z = 10f; // カメラからの距離を設定
-            Vector3 worldPosition = mainCamera.ScreenToWorldPoint(mousePosition); // ワールド座標に変換
-            transform.position = worldPosition; // カードを移動
-        }
-    }
-
-    /// <summary>
-    /// タップ開始時に実行
-    /// IPointerDownHandlerが必要
-    /// </summary>
-    /// <param name="eventData">タップ情報</param>
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("カードがタップされました");
-        isDragging = true; // ドラッグを開始
-    }
+        if (isPlayed)
+        {
+            Debug.Log("このカードはすでにプレイされています！");
+            return; // 一度だけプレイできるように制御
+        }
 
-    /// <summary>
-    /// タップ終了時に実行
-    /// IPointerUpHandlerが必要
-    /// </summary>
-    /// <param name="eventData">タップ情報</param>
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Debug.Log("カードへのタップを終了しました");
-        isDragging = false; // ドラッグを終了
+        if (cardZone == null)
+        {
+            Debug.LogError("CardZoneが設定されていません！");
+            return;
+        }
+
+        // カードをCardZoneに移動
+        transform.SetParent(cardZone, false);
+        transform.localPosition = Vector3.zero; // CardZoneの中心に配置
+        isPlayed = true; // カードをプレイ済みに設定
+
+        Debug.Log($"{gameObject.name} が CardZone に配置されました！");
     }
 }
