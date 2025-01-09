@@ -2,26 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 戦闘画面マネージャクラス
-/// </summary>
 public class BattleManager : MonoBehaviour
 {
-	// 管理下コンポーネント
-	public FieldManager fieldManager; // フィールド管理クラス
+    public FieldManager fieldManager; // フィールド管理クラスの参照
 
-	// Start
-	void Start()
-	{
-		// 管理下コンポーネント初期化
-		fieldManager.Init(this);
-
-		Debug.Log("BattleManager.cs : 初期化完了");
-	}
-
-	// Update
-	void Update()
-	{
-
-	}
+    void Start()
+    {
+        // フィールド管理の初期化 (カード配置など)
+        if (fieldManager != null)
+        {
+            Debug.Log("BattleManager: フィールド初期化を実行します");
+            fieldManager.InitHands(); // InitHands メソッドを呼び出す
+        }
+        else
+        {
+            Debug.LogError("BattleManager: FieldManager が割り当てられていません");
+        }
+    }
 }
