@@ -3,18 +3,18 @@ using UnityEngine;
 
 public class FieldManager : MonoBehaviour
 {
-    private BattleManager battleManager; // 戦闘画面マネージャ
-    public Transform handsCanvas; // HandsキャンバスのTransform
-    public Transform trashZone; // トラッシュゾーンのTransform
-    public Transform cardZone; // CardZoneのTransform
+    private BattleManager battleManager;
+    public Transform handsCanvas;
+    public Transform trashZone;
+    public List<Transform> cardZones; // CardZone, CardZone1, CardZone2, CardZone3 のリスト
 
-    // 初期化処理
+    private int currentZoneIndex = 0;
+
     public void InitHands(BattleManager _battleManager)
     {
         battleManager = _battleManager;
         Debug.Log("FieldManager.cs : 初期化完了");
 
-        // カードをランダムに配置
         PlaceRandomCards();
     }
 
@@ -45,22 +45,23 @@ public class FieldManager : MonoBehaviour
         }
     }
 
-    // CardZoneイメージ内のカードのHPを減少させるメソッド
-    public void ReduceHPInCardZone(int amount)
+    // 使用可能な次のゾーンを返す
+    public Transform GetNextAvailableZone()
     {
-        if (cardZone == null)
+        // ゾーンがすべて使用されているかチェック
+        for (int i = currentZoneIndex; i < cardZones.Count; i++)
         {
-            Debug.LogError("CardZoneが設定されていません！");
-            return;
-        }
-
-        foreach (Transform card in cardZone)
-        {
-            Card cardComponent = card.GetComponent<Card>();
-            if (cardComponent != null)
+            Transform zone = cardZones[i];
+            // ゾーン内のカード数を確認
+            if (zone.childCount == 0)  // ゾーンにカードがない場合
             {
-                cardComponent.ReduceHP(amount);
+                currentZoneIndex = i + 1;  // 次のゾーンに進む
+                Debug.Log($"次の空きゾーン: {zone.name}");
+                return zone;
             }
         }
+
+        Debug.Log("すべてのゾーンが使用されています！");
+        return null; // 空いているゾーンがない場合
     }
 }

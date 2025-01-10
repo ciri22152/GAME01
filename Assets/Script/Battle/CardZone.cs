@@ -30,7 +30,7 @@ public class CardZone : MonoBehaviour
     }
 
     // HPが0以下のカードをトラッシュゾーンに移動
-    private void CheckAndMoveToTrash()
+    public void CheckAndMoveToTrash() // メソッドをpublicに変更
     {
         List<Transform> toTrash = new List<Transform>();
 

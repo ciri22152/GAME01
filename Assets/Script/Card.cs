@@ -4,10 +4,14 @@ using UnityEngine.EventSystems;
 public class Card : MonoBehaviour, IPointerDownHandler
 {
     private bool isPlayed = false; // カードがすでにプレイされたかどうか
-    public Transform cardZone; // 配置先のCardZone
-    public Transform trashZone; // トラッシュゾーンのTransform
+    private FieldManager fieldManager;
 
     public int HP { get; private set; } = 100; // 初期HP
+
+    private void Start()
+    {
+        fieldManager = FindObjectOfType<FieldManager>();
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -23,17 +27,23 @@ public class Card : MonoBehaviour, IPointerDownHandler
             return;
         }
 
-        if (cardZone != null)
+        if (fieldManager != null)
         {
-            // カードをCardZoneに移動
-            transform.SetParent(cardZone, false);
-            transform.localPosition = Vector3.zero; // CardZoneの中心に配置
-            isPlayed = true; // カードをプレイ済みに設定
-            Debug.Log($"{gameObject.name} が CardZone に配置されました！");
+            Transform targetZone = fieldManager.GetNextAvailableZone();
+            if (targetZone != null)
+            {
+                transform.SetParent(targetZone, false);
+                transform.localPosition = Vector3.zero; // ゾーンの中心に配置
+                isPlayed = true; // カードをプレイ済みに設定
+                Debug.Log($"{gameObject.name} が {targetZone.name} に配置されました！");
+            }
+            else
+            {
+                Debug.Log("空きゾーンがありません！");
+            }
         }
     }
 
-    // HPを減少させるメソッド
     public void ReduceHP(int amount)
     {
         HP -= amount;
@@ -46,13 +56,13 @@ public class Card : MonoBehaviour, IPointerDownHandler
         }
     }
 
-    // カードをトラッシュゾーンに移動するメソッド
     private void MoveToTrash()
     {
+        Transform trashZone = fieldManager?.trashZone;
         if (trashZone != null)
         {
             transform.SetParent(trashZone, false);
-            transform.localPosition = Vector3.zero; // トラッシュゾーンの中心に配置
+            transform.localPosition = Vector3.zero;
             Debug.Log($"{gameObject.name} がトラッシュゾーンに移動しました！");
         }
         else
@@ -61,4 +71,3 @@ public class Card : MonoBehaviour, IPointerDownHandler
         }
     }
 }
-
