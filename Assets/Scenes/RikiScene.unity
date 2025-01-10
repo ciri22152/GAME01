@@ -366,6 +366,7 @@ MonoBehaviour:
   cardParent: {fileID: 1189949791}
   cardDataArray:
   - {fileID: 11400000, guid: d9c13fce2d1c1834992909dbc38ee47d, type: 2}
+  - {fileID: 11400000, guid: a492d17280c68044c82401c648d30d40, type: 2}
 --- !u!224 &521423769
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1102,6 +1103,6 @@ SceneRoots:
   - {fileID: 153943469}
   - {fileID: 1996527668}
   - {fileID: 810461153}
-  - {fileID: 521423769}
   - {fileID: 1189949791}
+  - {fileID: 521423769}
   - {fileID: 735010942}
