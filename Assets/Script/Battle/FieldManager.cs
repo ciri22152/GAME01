@@ -6,9 +6,7 @@ public class FieldManager : MonoBehaviour
     private BattleManager battleManager;
     public Transform handsCanvas;
     public Transform trashZone;
-    public List<Transform> cardZones; // CardZone, CardZone1, CardZone2, CardZone3 のリスト
-
-    private int currentZoneIndex = 0;
+    public CardZone playBoardZone; // プレイボードゾーンの参照
 
     public void InitHands(BattleManager _battleManager)
     {
@@ -45,23 +43,9 @@ public class FieldManager : MonoBehaviour
         }
     }
 
-    // 使用可能な次のゾーンを返す
-    public Transform GetNextAvailableZone()
+    // プレイボードゾーンを返す
+    public CardZone GetPlayBoardZone()
     {
-        // ゾーンがすべて使用されているかチェック
-        for (int i = currentZoneIndex; i < cardZones.Count; i++)
-        {
-            Transform zone = cardZones[i];
-            // ゾーン内のカード数を確認
-            if (zone.childCount == 0)  // ゾーンにカードがない場合
-            {
-                currentZoneIndex = i + 1;  // 次のゾーンに進む
-                Debug.Log($"次の空きゾーン: {zone.name}");
-                return zone;
-            }
-        }
-
-        Debug.Log("すべてのゾーンが使用されています！");
-        return null; // 空いているゾーンがない場合
+        return playBoardZone;
     }
 }

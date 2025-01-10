@@ -7,10 +7,7 @@ public class CardZone : MonoBehaviour
     public enum ZoneType
     {
         Hand,         // 手札
-        PlayBoard0,   // プレイボード0～4番目
-        PlayBoard1,
-        PlayBoard2,
-        PlayBoard3,
+        PlayBoard,    // プレイボード
         Trash         // トラッシュ(ゴミ箱)
     }
 
@@ -20,17 +17,20 @@ public class CardZone : MonoBehaviour
     // トラッシュゾーンの参照
     public CardZone trashZone;
 
+    // 手札ゾーンの参照
+    public CardZone handZone;
+
     void Update()
     {
         // 手札やプレイボードのカードの状態をチェック
-        if (zoneType != ZoneType.Trash)
+        if (zoneType == ZoneType.PlayBoard)
         {
             CheckAndMoveToTrash();
         }
     }
 
     // HPが0以下のカードをトラッシュゾーンに移動
-    public void CheckAndMoveToTrash() // メソッドをpublicに変更
+    public void CheckAndMoveToTrash()
     {
         List<Transform> toTrash = new List<Transform>();
 
@@ -51,5 +51,19 @@ public class CardZone : MonoBehaviour
             cardTransform.localPosition = Vector3.zero; // トラッシュの中心に配置
             Debug.Log($"{cardTransform.name} が {zoneType} から Trash に移動しました！");
         }
+
+        // カードゾーンが空の場合、手札からカードを移動
+        if (transform.childCount == 0)
+        {
+            Debug.Log("プレイボードが空です。手札からカードをクリックして配置してください。");
+        }
+    }
+
+    // 手札からカードをクリックしてプレイボードに配置
+    public void MoveCardFromHandToPlayBoard(Card card)
+    {
+        card.transform.SetParent(transform, false);
+        card.transform.localPosition = Vector3.zero; // ゾーンの中心に配置
+        Debug.Log($"{card.name} が手札からプレイボードに移動しました！");
     }
 }

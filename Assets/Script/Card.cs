@@ -3,43 +3,36 @@ using UnityEngine.EventSystems;
 
 public class Card : MonoBehaviour, IPointerDownHandler
 {
-    private bool isPlayed = false; // カードがすでにプレイされたかどうか
     private FieldManager fieldManager;
+    private CardZone cardZone;
 
     public int HP { get; private set; } = 100; // 初期HP
 
     private void Start()
     {
         fieldManager = FindObjectOfType<FieldManager>();
+        cardZone = GetComponentInParent<CardZone>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (isPlayed)
-        {
-            Debug.Log("このカードはすでにプレイされています！");
-            return;
-        }
-
         if (HP <= 0)
         {
             Debug.Log("カードのHPが0のためプレイできません！");
             return;
         }
 
-        if (fieldManager != null)
+        if (cardZone != null && cardZone.zoneType == CardZone.ZoneType.Hand)
         {
-            Transform targetZone = fieldManager.GetNextAvailableZone();
-            if (targetZone != null)
+            // 手札からプレイボードに移動
+            CardZone playBoardZone = fieldManager.GetPlayBoardZone();
+            if (playBoardZone != null)
             {
-                transform.SetParent(targetZone, false);
-                transform.localPosition = Vector3.zero; // ゾーンの中心に配置
-                isPlayed = true; // カードをプレイ済みに設定
-                Debug.Log($"{gameObject.name} が {targetZone.name} に配置されました！");
+                playBoardZone.MoveCardFromHandToPlayBoard(this);
             }
             else
             {
-                Debug.Log("空きゾーンがありません！");
+                Debug.Log("プレイボードゾーンが見つかりません！");
             }
         }
     }
