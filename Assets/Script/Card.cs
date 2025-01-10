@@ -16,6 +16,7 @@ public class Card : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        
         if (HP <= 0)
         {
             Debug.Log("カードのHPが0のためプレイできません！");

@@ -101,6 +101,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -43.4
       objectReference: {fileID: 0}
+    - target: {fileID: 2252899472904539370, guid: e699eb4a0585c0e419885287663982c2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091712323439319610, guid: e699eb4a0585c0e419885287663982c2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5363345430090577937, guid: e699eb4a0585c0e419885287663982c2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5467993301489530340, guid: e699eb4a0585c0e419885287663982c2, type: 3}
       propertyPath: m_Name
       value: NewCard
