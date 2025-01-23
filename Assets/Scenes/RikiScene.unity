@@ -222,18 +222,6 @@ MonoBehaviour:
   cardName: "\u5897\u7A0E\uFF1F\u30C0\u30E1\u7D76\u5BFE\uFF01"
   Seitou: "\u308C\u3044\u308F"
   policyEffect: "\u5FC5\u8981\u7A0E\u91D10"
---- !u!114 &35033084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35033079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &44996025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -337,9 +325,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 214463835}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 214463836}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &48983825
 GameObject:
@@ -566,7 +551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       propertyPath: m_TagString
-      value: DropZone
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3822798707807662809, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       propertyPath: m_Name
@@ -701,18 +686,6 @@ MonoBehaviour:
   attackCost: 3
   attackPower: 90
   attackName: "\u5897\u7A0E\u8A31\u3055\u3093\u30D1\u30F3\u30C1"
---- !u!114 &104555911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104555906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &128440473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
@@ -741,18 +714,6 @@ MonoBehaviour:
   attackCost: 3
   attackPower: 120
   attackName: "103\u4E07\u306E\u58C1\u3092\u8E74\u7834\u308B"
---- !u!114 &128440478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128440473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &128586156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,18 +1092,6 @@ MonoBehaviour:
   attackCost: 2
   attackPower: 70
   attackName: "\u5143\u7DCF\u7406\u306E\u5168\u529B\u30AD\u30C3\u30AF"
---- !u!114 &214463836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 214463831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &221004914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1246,9 +1195,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 929747263}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 929747264}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &233824887
 GameObject:
@@ -1428,9 +1374,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1234619107}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1234619108}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1001 &370349907
 PrefabInstance:
@@ -1574,18 +1517,6 @@ MonoBehaviour:
   attackCost: 1
   attackPower: 40
   attackName: "\u5C0F\u6CC9\u69CB\u6587\u30AD\u30C3\u30AF"
---- !u!114 &371809457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371809452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &410326724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,7 +1756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       propertyPath: m_TagString
-      value: DropZone
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3822798707807662809, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       propertyPath: m_Name
@@ -2105,9 +2036,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 442871762}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 442871765}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!224 &442871760 stripped
 RectTransform:
@@ -2134,18 +2062,6 @@ MonoBehaviour:
   cardName: "\u5897\u7A0E\uFF1F\u30C0\u30E1\u7D76\u5BFE\uFF01"
   Seitou: "\u308C\u3044\u308F"
   policyEffect: "\u5FC5\u8981\u7A0E\u91D10"
---- !u!114 &442871765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442871761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &449958055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,9 +2240,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 371809456}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 371809457}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &494135345
 GameObject:
@@ -2600,18 +2513,6 @@ MonoBehaviour:
   attackCost: 0
   attackPower: 10
   attackName: "\u52A9\u8D70\u3092\u3064\u3051\u3066\u8E74\u308B"
---- !u!114 &583151953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583151948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &600845417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2981,6 +2882,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6526944440224982385, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       propertyPath: m_Color.a
+      value: 0.75686276
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526944440224982385, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526944440224982385, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526944440224982385, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3289,18 +3202,6 @@ MonoBehaviour:
   attackCost: 3
   attackPower: 120
   attackName: "103\u4E07\u306E\u58C1\u3092\u8E74\u7834\u308B"
---- !u!114 &878499604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 878499599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &896978623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3404,9 +3305,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1273183394}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1273183395}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &903688688
 GameObject:
@@ -3421,7 +3319,7 @@ GameObject:
   - component: {fileID: 903688690}
   m_Layer: 0
   m_Name: Card_Trash
-  m_TagString: Untagged
+  m_TagString: DropZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3586,9 +3484,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1793840802}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1793840803}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &929747259 stripped
 GameObject:
@@ -3615,18 +3510,6 @@ MonoBehaviour:
   cardName: "\u653F\u6CBB\u306E\u4FE1\u983C\u56DE\u5FA9"
   Seitou: "\u7ACB\u6C11\u515A"
   policyEffect: "HP50\u56DE\u5FA9"
---- !u!114 &929747264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929747259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &937706006
 GameObject:
   m_ObjectHideFlags: 0
@@ -3864,9 +3747,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 986454236}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 986454239}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!224 &986454234 stripped
 RectTransform:
@@ -3893,18 +3773,6 @@ MonoBehaviour:
   cardName: "HNK\u3092\u30C8\u30B3\u30C8\u30F3\u3076\u3063\u58CA\u3059\uFF01"
   Seitou: "N\u56FD\u515A"
   policyEffect: "\u653B\u6483\u529B+30"
---- !u!114 &986454239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986454235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1011739496
 GameObject:
   m_ObjectHideFlags: 0
@@ -3977,18 +3845,6 @@ MonoBehaviour:
   cardName: "\u7DCF\u5408\u7D4C\u6E08\u653F\u7B56"
   Seitou: "\u81EA\u6C11\u515A"
   policyEffect: "\u653B\u6483+10\u3001\u5FC5\u8981\u7A0E\u91D1-1"
---- !u!114 &1013582552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013582547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1057894543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4092,9 +3948,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1013582551}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1013582552}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &1061812517
 GameObject:
@@ -4438,9 +4291,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1152830744}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1152830747}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!224 &1152830742 stripped
 RectTransform:
@@ -4467,18 +4317,6 @@ MonoBehaviour:
   cardName: "\u5897\u7A0E"
   Seitou: 
   policyEffect: "\u652F\u6301\u7387-20\u3001\u7A0E\u91D1+2"
---- !u!114 &1152830747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152830743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1154720839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4716,9 +4554,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2047314869}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2047314870}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1001 &1200724492
 PrefabInstance:
@@ -4823,9 +4658,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 878499603}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 878499604}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1001 &1214293232
 PrefabInstance:
@@ -4930,9 +4762,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1214293235}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1214293238}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!224 &1214293233 stripped
 RectTransform:
@@ -4959,18 +4788,6 @@ MonoBehaviour:
   cardName: "\u7DCF\u5408\u7D4C\u6E08\u653F\u7B56"
   Seitou: "\u81EA\u6C11\u515A"
   policyEffect: "\u653B\u6483+10\u3001\u5FC5\u8981\u7A0E\u91D1-1"
---- !u!114 &1214293238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214293234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1234619103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
@@ -4999,18 +4816,6 @@ MonoBehaviour:
   attackCost: 0
   attackPower: 10
   attackName: "\u52A9\u8D70\u3092\u3064\u3051\u3066\u8E74\u308B"
---- !u!114 &1234619108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234619103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1235879592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5114,9 +4919,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1235879595}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1235879598}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!224 &1235879593 stripped
 RectTransform:
@@ -5143,18 +4945,6 @@ MonoBehaviour:
   cardName: "\u653F\u6CBB\u306E\u4FE1\u983C\u56DE\u5FA9"
   Seitou: "\u7ACB\u6C11\u515A"
   policyEffect: "HP50\u56DE\u5FA9"
---- !u!114 &1235879598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235879594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1255423356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
@@ -5183,18 +4973,6 @@ MonoBehaviour:
   attackCost: 2
   attackPower: 70
   attackName: "\u5143\u7DCF\u7406\u306E\u5168\u529B\u30AD\u30C3\u30AF"
---- !u!114 &1255423361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255423356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1261967172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
@@ -5220,18 +4998,6 @@ MonoBehaviour:
   cardName: "\u5897\u7A0E"
   Seitou: 
   policyEffect: "\u652F\u6301\u7387-20\u3001\u7A0E\u91D1+2"
---- !u!114 &1261967177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261967172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1273183390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
@@ -5260,18 +5026,6 @@ MonoBehaviour:
   attackCost: 1
   attackPower: 40
   attackName: "\u5C0F\u6CC9\u69CB\u6587\u30AD\u30C3\u30AF"
---- !u!114 &1273183395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273183390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1280584206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5375,9 +5129,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 128440477}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 128440478}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &1302720964
 GameObject:
@@ -5901,7 +5652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       propertyPath: m_TagString
-      value: DropZone
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3822798707807662809, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       propertyPath: m_Name
@@ -6036,9 +5787,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1255423360}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1255423361}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1001 &1459312232
 PrefabInstance:
@@ -6143,9 +5891,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 35033083}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 35033084}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1001 &1512807007
 PrefabInstance:
@@ -6250,9 +5995,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1261967176}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1261967177}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &1513984192
 GameObject:
@@ -6491,9 +6233,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 583151952}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 583151953}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &1579697162
 GameObject:
@@ -7064,18 +6803,6 @@ MonoBehaviour:
   attackCost: 3
   attackPower: 90
   attackName: "\u5897\u7A0E\u8A31\u3055\u3093\u30D1\u30F3\u30C1"
---- !u!114 &1793840803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793840798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1842272252
 GameObject:
   m_ObjectHideFlags: 0
@@ -7783,9 +7510,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 104555910}
-    - targetCorrespondingSourceObject: {fileID: 2266892475247662171, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 104555911}
   m_SourcePrefab: {fileID: 100100000, guid: 161eedea182d68a4584242bcf4aa867b, type: 3}
 --- !u!1 &2047314865 stripped
 GameObject:
@@ -7812,18 +7536,6 @@ MonoBehaviour:
   cardName: "HNK\u3092\u30C8\u30B3\u30C8\u30F3\u3076\u3063\u58CA\u3059\uFF01"
   Seitou: "N\u56FD\u515A"
   policyEffect: "\u653B\u6483\u529B+30"
---- !u!114 &2047314870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047314865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f3ab0012dd7b314493d302844e2314f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2056831781
 GameObject:
   m_ObjectHideFlags: 0
